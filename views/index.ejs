@@ -1,8 +1,18 @@
+<!-- Vars: messages: Array of Objects -->
+
 <html>
   <head>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div>Hello World!</div>
+    <ul>
+      <% messages.forEach((message) => { %>
+      <li>
+        <p>Message: <%= message.text %></p>
+        <p>From: <%= message.user %></p>
+        <p>On: <%= message.added %></p>
+      </li>
+      <% }) %>
+    </ul>
   </body>
 </html>
