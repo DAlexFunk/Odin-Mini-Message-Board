@@ -18,14 +18,6 @@ async function getMessage(req, res) {
   res.render("singleMessage", { message: messages[messageID] });
 }
 
-async function goToMessagePage(req, res) {
-  res.redirect(`/messages/${req.body.goToPage}`)
-}
-
-async function goToIndex(req, res) {
-  res.redirect("/messages")
-}
-
 async function handlePost(req, res) {
   if (req.body.goToPage) {
     res.redirect(`/messages/${req.body.goToPage}`);
@@ -34,7 +26,7 @@ async function handlePost(req, res) {
   } else if (req.body.goToNew) {
     res.redirect("/new");
   } else {
-    res.send("BAD REQUEST")
+    res.status(404).send("BAD REQUEST")
   }
 }
 
