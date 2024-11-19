@@ -1,0 +1,17 @@
+<!-- Vars: message: Object -->
+
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="message">
+      <p>Message: <%= message.text %></p>
+      <p>From: <%= message.user %></p>
+      <p>On: <%= message.added %></p>
+    </div>
+    <form action="/messages/:messageID" method="post">
+      <button name="goToIndex" value="1">Go Back</button>
+    </form>
+  </body>
+</html>

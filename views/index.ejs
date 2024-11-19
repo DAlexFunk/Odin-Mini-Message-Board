@@ -6,13 +6,12 @@
   </head>
   <body>
     <ul>
-      <% messages.forEach((message) => { %>
-      <li>
-        <p>Message: <%= message.text %></p>
-        <p>From: <%= message.user %></p>
-        <p>On: <%= message.added %></p>
-      </li>
-      <% }) %>
+      <% for (let i = 0; i < messages.length; i++) { %>
+        <%- include("indexMessage", {message: {...messages[i], index: i}}) %>
+      <% } %>
     </ul>
+    <form action="/messages" method="post">
+      <button name="goToNew" value="1">Create New Message</button>
+    </form>
   </body>
 </html>
