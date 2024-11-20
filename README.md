@@ -5,8 +5,8 @@ The Mini Message Board project from The Odin Project
 This is the Mini Message Board project from The Odin Project. The purpose of this project is to practice using Express and NodeJS as a backend server for a website. Everything about the site is using Node and Express and files are layed out with the Model-View-Controller (MVC) pattern.
 
 ## Use
-* Start the server by running index.js with Node.
-* The site will be on localhost:8080.
+* The site can be accessed [here](https://weird-dorree-alex-funk-projects-a0c238cc.koyeb.app/messages).
+* The design is simple because that was not the focus of the project.
 * The main page will be populated with 2 default messages.
 * View full message content by clicking the corresponding button.
 * Add a new message by clicking the add new message button.
