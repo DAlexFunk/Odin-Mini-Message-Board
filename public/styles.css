@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: rebeccapurple;
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+ul {
+  margin: 24px;
+}
+
+li {
+  display: block;
+  margin-bottom: 12px;
+  width: 250px;
+}
+
+li p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+textarea {
+  min-width: 250px;
+  min-height: 250px;
+}
+
+textarea:invalid,
+input:invalid {
+  border: 2px solid red;
+}
+
+div.message {
+  text-align: center;
+}
+
+div.message p {
+    margin: 24px;
+}

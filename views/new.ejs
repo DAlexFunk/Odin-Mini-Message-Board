@@ -4,9 +4,26 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <h1>Write new Message</h1>
+    <p>Fields labeled with an asterisk (*) are required</p>
     <form action="/new" method="post">
-      <input type="text" name="user" />
-      <textarea name="text" id="text"></textarea>
+      <label for="userInput">Name* :</label>
+      <input
+        id="userInput"
+        type="text"
+        name="user"
+        placeholder="Eo O&#39;Lykos"
+        minlength="1"
+        required
+      />
+      <label for="bodyInput">Message* :</label>
+      <textarea
+        id="bodyInput"
+        name="text"
+        placeholder="I live for the dream that my children will be born free..."
+        minlength="1"
+        required
+      ></textarea>
       <button>Submit</button>
     </form>
   </body>
