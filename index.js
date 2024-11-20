@@ -14,7 +14,7 @@ app.get("/", (req, res) => res.redirect("/messages"));
 app.use("/messages", indexRouter);
 app.use("/new", newRouter);
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
