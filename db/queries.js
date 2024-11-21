@@ -13,11 +13,11 @@ async function getMessageByID(id) {
   return rows;
 }
 
-async function addMessage(message, author) {
+async function addMessageDB(message, author) {
   await pool.query(
     "INSERT INTO messages (message, user_name, added) VALUES ($1, $2, CURRENT_DATE)",
     [message, author]
   );
 }
 
-module.exports = { getAllMessages, getMessageByID, addMessage }
+module.exports = { getAllMessages, getMessageByID, addMessageDB }

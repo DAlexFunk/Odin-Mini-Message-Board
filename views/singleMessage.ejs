@@ -9,7 +9,7 @@
     <div class="message">
       <p>Message: <%= message.message %></p>
       <p>From: <%= message.user_name %></p>
-      <p>On: <%= message.added %></p>
+      <p>On: <%= new Date(message.added).toDateString() %></p>
     </div>
     <form action="/messages/:messageID" method="post">
       <button name="goToIndex" value="1">Go Back</button>
