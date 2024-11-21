@@ -14,3 +14,4 @@ This is the Mini Message Board project from The Odin Project. The purpose of thi
 
 ## Credits
 * [The Odin Project](https://www.theodinproject.com) for providing the project guidelines and teaching the skills necessary to complete it.
+* [Koyeb](https://www.koyeb.com/) for serving as the PaaS for this project and hosting both the site and the database.
