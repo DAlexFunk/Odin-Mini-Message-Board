@@ -1,6 +1,6 @@
 <li>
-  <p><%= message.user %>: <%= message.text %></p>
+  <p><%= message.user_name %>: <%= message.message %></p>
   <form action="/messages" method="post">
-    <button name="goToPage" value="<%= message.index %>">See full message</button>
+    <button name="goToPage" value="<%= message.id %>">See full message</button>
   </form>
 </li>

@@ -7,8 +7,8 @@
   </head>
   <body>
     <div class="message">
-      <p>Message: <%= message.text %></p>
-      <p>From: <%= message.user %></p>
+      <p>Message: <%= message.message %></p>
+      <p>From: <%= message.user_name %></p>
       <p>On: <%= message.added %></p>
     </div>
     <form action="/messages/:messageID" method="post">
